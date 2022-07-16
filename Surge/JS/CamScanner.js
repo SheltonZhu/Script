@@ -27,16 +27,28 @@ https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url simple-r
 
 [MITM]
 hostname = ap*.intsig.net
-// obj = {"data":{"psnl_vip_property":{"expiry":"1897017600"}},"server_time":"1687017600","pdfword_balance":"9000","login_ocr_balance":"1000","no_login_ocr_balance":"2","cert_mode_balance":9090,"bookmode_balance":29090,"immt_expy_points":"0","points":"1000","CamScanner_RoadMap":"0","used_points":"9090","ocr_balance":11,"fax_balance":"10100"},"ret":"0"};
-// obj.data.psnl_vip_property.expiry = "1897017601";
+
 **************************/
-console.log($response.body)
+console.log("GET response: " + $response.body)
 let obj = JSON.parse($response.body);
 if (typeof obj === 'object') {
   console.log(JSON.stringify(obj))
+  if (obj.hasOwnProperty('data')){
+    obj.data.psnl_vip_property = {"expiry":"1897017601"}
+    obj.data.points = "1000"
+    obj.data.ocr_balance = "1000"
+    obj.data.pdfword_balance = "1000"
+    obj.data.fax_balance = "1000"
+    obj.data.login_ocr_balance = "1000"
+    obj.data.no_login_ocr_balance = "1000"
+    obj.data.bookmode_balance = "1000"
+    obj.data.cert_mode_balance = "1000"
+    console.log("修改成功")
+  } else {
+    obj = {"data":{"psnl_vip_property":{"expiry":"1897017601"}}};
+  }
 } else {
   console.log(typeof obj)
 }
-obj = {"data":{"psnl_vip_property":{"expiry":"1897017601"}}};
 $done({body: JSON.stringify(obj)});
 
