@@ -5,7 +5,7 @@ CamScanner 解锁部分高级特权
 Quantumult X:
 
 [rewrite_local]
-^https:\/\/v3\.camscanner\.com\/app\/getPrivilegeItem url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner2.js
+^https:\/\/v3\.camscanner\.com\/app\/getPrivilegeItem url script-response-body https://raw.githubusercontent.com/SheltonZhu/Script/master/Surge/JS/CamScanner2.js
 
 [mitm]
 hostname = v3.camscanner.com
