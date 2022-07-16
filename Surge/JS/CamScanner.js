@@ -32,11 +32,11 @@ hostname = ap*.intsig.net
 
 **************************/
 let obj = JSON.parse($response.body);
-if (typeof obj === 'undefined') {
-  obj = {"data":{"psnl_vip_property":{"expiry":"1897017601"}}};
-} else {
+if (typeof obj === 'object') {
   console.log(obj)
   obj.data.psnl_vip_property.expiry = "1897017601";
+} else {
+  obj = {"data":{"psnl_vip_property":{"expiry":"1897017601"}}};
 }
 $done({body: JSON.stringify(obj)});
 
