@@ -29,11 +29,10 @@ https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url simple-r
 hostname = ap*.intsig.net
 
 **************************/
-console.log("GET response: " + $response.body)
 let obj = JSON.parse($response.body);
 if (typeof obj === 'object') {
   if (obj.hasOwnProperty('data')){
-    obj.data.psnl_vip_property = {"expiry":"1897017601"}
+    obj.data.psnl_vip_property = {"expiry":"4110017601"}
     obj.data.points = "100000"
     obj.data.ocr_balance = "100000"
     obj.data.pdfword_balance = "100000"
@@ -93,13 +92,13 @@ if (typeof obj === 'object') {
             "CamScanner_Pdfword":0,
             "CamScanner_AlbumImport":0
         }
-    
-    console.log("修改成功")
   } else {
+    console.log($response.body)
     obj = {"data":{"psnl_vip_property":{"expiry":"4110017601"}}};
   }
 } else {
   console.log(typeof obj)
+  console.log($response.body)
 }
 $done({body: JSON.stringify(obj)});
 
