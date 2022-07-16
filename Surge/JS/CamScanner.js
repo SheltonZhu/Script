@@ -77,20 +77,20 @@ if (typeof obj === 'object') {
         }
     
      obj.data.points_exchange_cfgrs = {
-            "CamScanner_ID_Card_Authenticity":0,
-            "CamScanner_ID_Card_Credit":0,
-            "CamScanner_CloudCap_1G":0,
-            "CamScanner_CertMode":0,
-            "CamScanner_Profile_Card_Format":0,
-            "CamScanner_Translation":0,
-            "CamScanner_Excel":0,
-            "CamScanner_Watermarks":0,
-            "CamScanner_CloudOCR":0,
-            "CamScanner_Pdf2excel":0,
-            "CamScanner_Pdf2ppt":0,
-            "CamScanner_Sign":0,
-            "CamScanner_Pdfword":0,
-            "CamScanner_AlbumImport":0
+            "CamScanner_ID_Card_Authenticity":1,
+            "CamScanner_ID_Card_Credit":1,
+            "CamScanner_CloudCap_1G":1,
+            "CamScanner_CertMode":1,
+            "CamScanner_Profile_Card_Format":1,
+            "CamScanner_Translation":1,
+            "CamScanner_Excel":1,
+            "CamScanner_Watermarks":1,
+            "CamScanner_CloudOCR":1,
+            "CamScanner_Pdf2excel":1,
+            "CamScanner_Pdf2ppt":1,
+            "CamScanner_Sign":1,
+            "CamScanner_Pdfword":1,
+            "CamScanner_AlbumImport":1
         }
   } else {
     console.log($response.body)
