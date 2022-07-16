@@ -20,63 +20,63 @@ if (typeof obj === 'object') {
             "scaner":[
                 {
                     "item":"CamScanner_ImageRestore",
-                    "balance":8
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_Patting",
-                    "balance":3
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_Profile_Card_Format",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_BookMode",
-                    "balance":20
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_CertMode",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_HDScan",
-                    "balance":0
+                    "balance":100000
                 }
             ],
             "document":[
                 {
                     "item":"CamScanner_Pic2pdf",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_PdfCompress",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_PdfEncrypt",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_FileMerge",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_PdfExtract",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_PdfWatermark",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_PdfSign",
-                    "balance":0
+                    "balance":100000
                 }
             ],
             "transfer":[
                 {
                     "item":"CamScanner_ExcelRecoginze",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_RoadMap",
@@ -84,37 +84,37 @@ if (typeof obj === 'object') {
                 },
                 {
                     "item":"CamScanner_Pdf2ppt",
-                    "balance":1
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_CloudOCR",
-                    "balance":19
+                    "balance":100000
                 }
             ],
             "other":[
                 {
                     "item":"CamScanner_Translation",
-                    "balance":3
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_DirNum",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_IP_REMOVEAD",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_PingTu",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_Points",
-                    "balance":0
+                    "balance":100000
                 },
                 {
                     "item":"CamScanner_Fax_Balance",
-                    "balance":0
+                    "balance":100000
                 }
             ]
         },
