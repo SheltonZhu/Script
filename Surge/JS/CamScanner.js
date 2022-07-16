@@ -32,7 +32,6 @@ hostname = ap*.intsig.net
 console.log("GET response: " + $response.body)
 let obj = JSON.parse($response.body);
 if (typeof obj === 'object') {
-  console.log(JSON.stringify(obj))
   if (obj.hasOwnProperty('data')){
     obj.data.psnl_vip_property = {"expiry":"1897017601"}
     obj.data.points = "1000"
